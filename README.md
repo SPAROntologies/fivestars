@@ -1,0 +1,2 @@
+# fivestars
+The Five Stars of Online Research Articles Ontology, is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled The Five Stars of Online Journal Articles — a Framework for Article Evaluation, published in D-Lib Magazine 18 (1/2) (January/February 2012 issue). doi: https://doi.org/10.1045/january2012-shotton. 
