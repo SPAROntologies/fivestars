@@ -1,0 +1,97 @@
+@prefix : <http://purl.org/spar/fivestars/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+<http://purl.org/spar/fivestars> a owl:Ontology ;
+    dc:creator "David Shotton"^^xsd:string ;
+    dc:date "2012-01-16" ;
+    dc:description """The Five Stars of Online Research Articles Ontology, is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled The Five Stars of Online Journal Articles — a Framework for Article Evaluation, published in D-Lib Magazine 18 (1/2) (January/February 2012 issue).  doi: https://doi.org/10.1045/january2012-shotton.
+
+The ontology is simple, consisting only of those data properties required to permit a rating for each of the five stars, and for the paper as a whole, to be recorded as an integer, together with an associated comment.  It is intended for use by publishers and others wishing to encode Five Stars ratings for individual papers in machine-readable form.
+
+Other ontologies, for example DCMI Metadata Terms (http://dublincore.org/documents/dcmi-terms/) and FaBiO, the FRBR-aligned Bibliographic Ontology (http://purl.org/spar/fabio), may be used to describe other aspects of a journal article, e.g. authors, journal name, and publication year.
+"""@en ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en ;
+    dc:title "The Five Stars of Online Research Articles Ontology (FiveStars)"@en ;
+    rdfs:comment """The Five Stars of Online Research Articles Ontology (FiveStars) is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata.
+
+**URL:** http://purl.org/spar/fivestars
+
+**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/fivestars
+
+**Cite as:** Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). DOI: https://doi.org/10.1045/january2012-shotton  """@en ;
+    owl:versionIRI <http://purl.org/spar/fivestars/2012-01-16> ;
+    owl:versionInfo "1.0"^^xsd:string .
+
+:availableDatasetsRatingComment a owl:DatatypeProperty ;
+    rdfs:comment "Comment explaining Five Stars ratings given to journal artice relating to available datasets."@en .
+
+:enhancedContentRatingComment a owl:DatatypeProperty ;
+    rdfs:comment "Comment explaining Five Stars ratings given to journal artice relating to enhanced content."@en .
+
+:hasAvailableDatasetsRating a owl:DatatypeProperty ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for available datasets."@en ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:hasEnhancedContentRating a owl:DatatypeProperty ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for enhanced content."@en ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:hasMachine-readableMetadataRating a owl:DatatypeProperty ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for machine-readable metadata."@en ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:hasOpenAccessRating a owl:DatatypeProperty ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for open access."@en ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:hasOverallFiveStarsRating a owl:DatatypeProperty ;
+    rdfs:comment "Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."@en ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:hasPeerReviewRating a owl:DatatypeProperty ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for peer review."@en ;
+    rdfs:range xsd:nonNegativeInteger .
+
+:machine-readableMetadataRatingComment a owl:DatatypeProperty ;
+    rdfs:comment "Comment explaining Five Stars ratings given to journal artice relating to machine-readable metadata."@en .
+
+:openAccessRatingComment a owl:DatatypeProperty ;
+    rdfs:comment "Comment explaining Five Stars ratings given to journal artice relating to open access."@en .
+
+:overallFiveStarsRatingComment a owl:DatatypeProperty ;
+    rdfs:comment "Comment on overall Five Stars rating given to journal artice."@en .
+
+:peerReviewRatingComment a owl:DatatypeProperty ;
+    rdfs:comment "Comment explaining Five Stars ratings given to journal artice relating to peer review."@en .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:topObjectProperty a owl:ObjectProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+

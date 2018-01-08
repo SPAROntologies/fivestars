@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasEnhancedContentRating">
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal artice for enhanced content.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasPeerReviewRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal artice for peer review.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/overallFiveStarsRatingComment">
+    <rdfs:comment xml:lang="en">Comment on overall Five Stars rating given to journal artice.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars">
+    <dc:description xml:lang="en">The Five Stars of Online Research Articles Ontology, is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled The Five Stars of Online Journal Articles — a Framework for Article Evaluation, published in D-Lib Magazine 18 (1/2) (January/February 2012 issue).  doi: https://doi.org/10.1045/january2012-shotton.
+
+The ontology is simple, consisting only of those data properties required to permit a rating for each of the five stars, and for the paper as a whole, to be recorded as an integer, together with an associated comment.  It is intended for use by publishers and others wishing to encode Five Stars ratings for individual papers in machine-readable form.
+
+Other ontologies, for example DCMI Metadata Terms (http://dublincore.org/documents/dcmi-terms/) and FaBiO, the FRBR-aligned Bibliographic Ontology (http://purl.org/spar/fabio), may be used to describe other aspects of a journal article, e.g. authors, journal name, and publication year.
+</dc:description>
+    <dc:date>2012-01-16</dc:date>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Shotton</dc:creator>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/fivestars/2012-01-16"/>
+    <rdfs:comment xml:lang="en">The Five Stars of Online Research Articles Ontology (FiveStars) is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata.
+
+**URL:** http://purl.org/spar/fivestars
+
+**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/fivestars
+
+**Cite as:** Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). DOI: https://doi.org/10.1045/january2012-shotton  </rdfs:comment>
+    <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <dc:title xml:lang="en">The Five Stars of Online Research Articles Ontology (FiveStars)</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/availableDatasetsRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Comment explaining Five Stars ratings given to journal artice relating to available datasets.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasMachine-readableMetadataRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal artice for machine-readable metadata.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/openAccessRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Comment explaining Five Stars ratings given to journal artice relating to open access.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasAvailableDatasetsRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal artice for available datasets.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasOverallFiveStarsRating">
+    <rdfs:comment xml:lang="en">Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasOpenAccessRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal artice for open access.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/enhancedContentRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Comment explaining Five Stars ratings given to journal artice relating to enhanced content.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/machine-readableMetadataRatingComment">
+    <rdfs:comment xml:lang="en">Comment explaining Five Stars ratings given to journal artice relating to machine-readable metadata.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/peerReviewRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Comment explaining Five Stars ratings given to journal artice relating to peer review.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

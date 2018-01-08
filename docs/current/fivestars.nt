@@ -1,0 +1,51 @@
+<http://purl.org/spar/fivestars/hasEnhancedContentRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fivestars/hasPeerReviewRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/overallFiveStarsRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment on overall Five Stars rating given to journal artice."@en .
+<http://purl.org/spar/fivestars> <http://www.w3.org/2000/01/rdf-schema#comment> "The Five Stars of Online Research Articles Ontology (FiveStars) is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata.\n\n**URL:** http://purl.org/spar/fivestars\n\n**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X)\n\n**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\n\n**Website:** http://www.sparontologies.net/ontologies/fivestars\n\n**Cite as:** Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). DOI: https://doi.org/10.1045/january2012-shotton  "@en .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment explaining Five Stars ratings given to journal artice relating to available datasets."@en .
+<http://purl.org/spar/fivestars/hasMachine-readableMetadataRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fivestars/openAccessRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/hasMachine-readableMetadataRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer rating (from 0 to 4) given to journal artice for machine-readable metadata."@en .
+<http://purl.org/spar/fivestars> <http://purl.org/dc/elements/1.1/description> "The Five Stars of Online Research Articles Ontology, is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled The Five Stars of Online Journal Articles \u2014 a Framework for Article Evaluation, published in D-Lib Magazine 18 (1/2) (January/February 2012 issue).  doi: https://doi.org/10.1045/january2012-shotton.\n\nThe ontology is simple, consisting only of those data properties required to permit a rating for each of the five stars, and for the paper as a whole, to be recorded as an integer, together with an associated comment.  It is intended for use by publishers and others wishing to encode Five Stars ratings for individual papers in machine-readable form.\n\nOther ontologies, for example DCMI Metadata Terms (http://dublincore.org/documents/dcmi-terms/) and FaBiO, the FRBR-aligned Bibliographic Ontology (http://purl.org/spar/fabio), may be used to describe other aspects of a journal article, e.g. authors, journal name, and publication year.\n"@en .
+<http://purl.org/spar/fivestars> <http://purl.org/dc/elements/1.1/date> "2012-01-16" .
+<http://purl.org/spar/fivestars/hasAvailableDatasetsRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fivestars/hasOpenAccessRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/spar/fivestars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/spar/fivestars> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fivestars/enhancedContentRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment explaining Five Stars ratings given to journal artice relating to enhanced content."@en .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fivestars/hasEnhancedContentRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/machine-readableMetadataRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/hasEnhancedContentRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer rating (from 0 to 4) given to journal artice for enhanced content."@en .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."@en .
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fivestars/hasMachine-readableMetadataRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/peerReviewRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment explaining Five Stars ratings given to journal artice relating to peer review."@en .
+<http://purl.org/spar/fivestars/hasPeerReviewRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fivestars> <http://purl.org/dc/elements/1.1/title> "The Five Stars of Online Research Articles Ontology (FiveStars)"@en .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/spar/fivestars/openAccessRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment explaining Five Stars ratings given to journal artice relating to open access."@en .
+<http://purl.org/spar/fivestars/machine-readableMetadataRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment explaining Five Stars ratings given to journal artice relating to machine-readable metadata."@en .
+<http://purl.org/spar/fivestars> <http://purl.org/dc/elements/1.1/creator> "David Shotton"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/fivestars/overallFiveStarsRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/hasOpenAccessRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/hasPeerReviewRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer rating (from 0 to 4) given to journal artice for peer review."@en .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fivestars> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/spar/fivestars/2012-01-16> .
+<http://purl.org/spar/fivestars/hasOpenAccessRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer rating (from 0 to 4) given to journal artice for open access."@en .
+<http://purl.org/spar/fivestars/enhancedContentRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en .
+<http://purl.org/spar/fivestars/hasAvailableDatasetsRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/hasAvailableDatasetsRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Integer rating (from 0 to 4) given to journal artice for available datasets."@en .
+<http://purl.org/spar/fivestars/peerReviewRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+
