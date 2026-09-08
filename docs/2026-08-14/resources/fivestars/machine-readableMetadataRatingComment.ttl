@@ -1,0 +1,18 @@
+@prefix fivestars: <http://purl.org/spar/fivestars/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fivestars:machine-readableMetadataRatingComment a owl:DatatypeProperty ;
+    rdfs:label "machine-readable metadata rating comment"@en ;
+    vann:example """
+    :my-article
+        fivestars:hasMachine-readableMetadataRating "1"^^xsd:nonNegativeInteger ;
+        fivestars:machine-readableMetadataRatingComment "Structural markup has been provided." .
+    """ ;
+    rdfs:comment "A comment explaining Five Stars ratings given to journal artice relating to machine-readable metadata."@en ;
+    rdfs:isDefinedBy fivestars: ;
+    vs:term_status reg:statusStable .
+

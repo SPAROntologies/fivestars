@@ -1,0 +1,23 @@
+@prefix fivestars: <http://purl.org/spar/fivestars/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fivestars:hasOverallFiveStarsRating a owl:DatatypeProperty ;
+    rdfs:label "has overall five stars rating"@en ;
+    vann:example """
+    :my-article
+        fivestars:hasOverallFiveStarsRating "9"^^xsd:nonNegativeInteger ;
+        fivestars:overallFiveStarsRatingComment 
+            "The nature of this article, being a position paper rather
+            than a research paper with primary research data, has
+            influenced the overall rating obtained." .
+    """ ;
+    rdfs:comment "Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."@en ;
+    rdfs:isDefinedBy fivestars: ;
+    rdfs:range xsd:nonNegativeInteger ;
+    vs:term_status reg:statusStable .
+

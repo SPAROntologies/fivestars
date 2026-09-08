@@ -1,0 +1,666 @@
+[
+  {
+    "@id": "http://purl.org/spar/fivestars/openAccessRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasOpenAccessRating \"4\"^^xsd:nonNegativeInteger ;\n        fivestars:openAccessRatingComment \"The article has been published in gold open access.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment explaining Five Stars ratings given to journal artice relating to open access."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "open access rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/peerReviewRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasPeerReviewRating \"3\"^^xsd:nonNegativeInteger ;\n        fivestars:peerReviewRatingComment \"Post-publication peer review is available.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment explaining Five Stars ratings given to journal artice relating to peer review."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "peer review rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/overallFiveStarsRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasOverallFiveStarsRating \"9\"^^xsd:nonNegativeInteger ;\n        fivestars:overallFiveStarsRatingComment \n            \"The nature of this article, being a position paper rather\n            than a research paper with primary research data, has\n            influenced the overall rating obtained.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment on overall Five Stars rating given to journal artice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "overall five stars rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/machine-readableMetadataRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasMachine-readableMetadataRating \"1\"^^xsd:nonNegativeInteger ;\n        fivestars:machine-readableMetadataRatingComment \"Structural markup has been provided.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment explaining Five Stars ratings given to journal artice relating to machine-readable metadata."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "machine-readable metadata rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/enhancedContentRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasEnhancedContentRating \"1\"^^xsd:nonNegativeInteger ;\n        fivestars:enhancedContentRatingComment \"Active web links have been provided.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment explaining Five Stars ratings given to journal artice relating to enhanced content."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "enhanced content rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/hasMachine-readableMetadataRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasMachine-readableMetadataRating \"1\"^^xsd:nonNegativeInteger ;\n        fivestars:machine-readableMetadataRatingComment \"Structural markup has been provided.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Integer rating (from 0 to 4) given to journal artice for machine-readable metadata."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has machine-readable metadata rating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/hasEnhancedContentRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasEnhancedContentRating \"1\"^^xsd:nonNegativeInteger ;\n        fivestars:enhancedContentRatingComment \"Active web links have been provided.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Integer rating (from 0 to 4) given to journal artice for enhanced content."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has enhanced content rating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/availableDatasetsRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasAvailableDatasetsRating \"0\"^^xsd:nonNegativeInteger ;\n        fivestars:availableDatasetsRatingComment \"No data has been published.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment explaining Five Stars ratings given to journal artice relating to available datasets."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "available datasets rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/contributor": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "David Shotton (https://orcid.org/0000-0001-5506-523X)"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2026-08-14"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "en",
+        "@value": "\nThe **_Five Stars of Online Research Articles Ontology (FiveStars)_** is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled [The Five Stars of Online Journal Articles — a Framework for Article Evaluation](https://doi.org/10.1045/january2012-shotton).\n\nThe five attributes are:\n* **Peer review.** Ensure your article is peer reviewed, to provide assurance of its scholarly value, quality and integrity. Possible values: (0) no peer review, (1) pre-publication peer review, (2) responsive peer review, (3) post-publication peer review, (4) open peer review.\n* **Open access.** Ensure others have cost-free open access both to read and to reuse your published article, to ensure its greatest possible readership and usefulness. Possible values: (0) no open access, (1) self-archiving green/gratis open access, (2) funder-mandated green/gratis open access, (3) author-pays gold/gratis open access, (4) author-pays gold/libre open access.\n* **Enriched content.** Use the full potential of Web technologies and Web standards to provide interactivity and semantic enrichment to the content of your online article. Possible values: (0) no enhancements, (1) active Web links, (2) semantic enrichment of the text, (3) 'lively' content, (4) data fusions (\"mash-ups\").\n* **Available datasets.** Ensure that all the data supporting the results you report are published under an open license, with sufficient metadata to enable their re-interpretation and reuse. Possible values: (0) no published data, (1) supplementary information files available, (2) article data downloadable in actionable form, (3) underlying datasets published, (4) data available to peer-reviewers.\n* **Machine-readable metadata.** Publish machine-readable metadata describing both your article and your cited references, so that these descriptions can be discovered and reused automatically. Possible values: (0) no available metadata, (1) structural markup available, (2) bibliographic and citation metadata available, (3) rich embedded markup, (4) structured article summary.\n\n![The properties introduced in FiveStars.](fivestars.png)\n\nThe ontology is simple, consisting only of those data properties (e.g., `fivestars:hasOpenAccessRating` and `fivestars:openAccessRatingComment`) required to permit a rating for each of the five stars, and for the paper as a whole, to be recorded as an integer, together with an associated comment. \nIt is intended for use by publishers and others wishing to encode Five Stars ratings for individual papers in machine-readable form.\n\nOther ontologies, for example [DCMI Metadata Terms](http://dublincore.org/documents/dcmi-terms/) and the [FRBR-aligned Bibliographic Ontology (FaBiO)](http://purl.org/spar/fabio), may be used to describe other aspects of a journal article, e.g. authors, journal name, and publication year.\n\n## Examples of use\n\nIn the following subsections, we introduce some examples to showcase how to use FiveStars. \n\nThe prefixes that are used in all the examples provided below are defined as follows:\n\n    @prefix fivestars: <http://purl.org/spar/fivestars/> .\n    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n### Rating an article with the Five Stars of Online Journal Articles\n\nThe Five Stars of Online Journal Articles Ontology allows to encode ratings machine-readable form according to five different criteria, i.e., peer review, open access, enhanced content, available datasets, and machine-readable metadata. \n\n    <http://doi.org/10.1045/january2012-shotton>\n        fivestars:hasPeerReviewRating\n            \"3\"^^xsd:nonNegativeInteger ;\n        fivestars:peerReviewRatingComment\n            \"Post-publication responsive peer review of the preprint.\" ;\n\n        fivestars:hasOpenAccessRating\n            \"4\"^^xsd:nonNegativeInteger ;\n        fivestars:openAccessRatingComment\n            \"Gold/libre open access without author fee!\" ;\n\n        fivestars:hasEnhancedContentRating\n            \"1\"^^xsd:nonNegativeInteger ;\n        fivestars:enhancedContentRatingComment\n            \"Plentiful Web links in text and to all references. No\n            additional semantic enhancement of text.\" ;\n\n        fivestars:hasAvailableDatasetsRating\n            \"0\"^^xsd:nonNegativeInteger ;\n\n        fivestars:hasMachine-readableMetadataRating\n            \"1\"^^xsd:nonNegativeInteger ;\n        fivestars:machine-readableMetadataRatingComment\n            \"Structural markup in HTML only.\" ;\n\n        fivestars:hasOverallFiveStarsRating\n            \"9\"^^xsd:nonNegativeInteger ;\n        fivestars:overallFiveStarsRatingComment\n            \"The nature of this article, being a position paper rather\n            than a research paper with primary research data, has\n            influenced the overall rating obtained.\" .\n\n## Competency Questions\n\nFiveStars can be used for answering several questions related to the main characteristics of online journal articles.\nIn the following subsections, some of them are introduced together with their respective SPARQL queries. \n\nThe prefixes that are used in all the SPARQL queries provided below are defined as follows:\n\n    PREFIX fivestars: <http://purl.org/spar/fivestars/>\n\n### CQ1\n\nWhat is the overall five-star rating and associated evaluation comment for a given resource?\n\n    SELECT ?resource ?overallRating ?comment\n    WHERE {\n        ?resource fivestars:hasOverallFiveStarsRating ?overallRating .\n        OPTIONAL { ?resource fivestars:overallFiveStarsRatingComment ?comment . }\n    }\n\n### CQ2\n\nWhat is the peer review rating and its explanatory comment for a resource?\n\n    SELECT ?resource ?peerReviewRating ?comment\n    WHERE {\n        ?resource fivestars:hasPeerReviewRating ?peerReviewRating .\n        OPTIONAL { ?resource fivestars:peerReviewRatingComment ?comment . }\n    }\n\n### CQ3\n\nWhat is the open access rating and its justification for a resource?\n\n    SELECT ?resource ?openAccessRating ?comment\n    WHERE {\n        ?resource fivestars:hasOpenAccessRating ?openAccessRating .\n        OPTIONAL { ?resource fivestars:openAccessRatingComment ?comment . }\n    }\n\n### CQ4\n\nWhat are the content enhancement and dataset availability ratings for a resource?\n\n    SELECT ?resource ?enhancedContentRating ?enhancedContentComment ?datasetsRating\n    WHERE {\n        ?resource fivestars:hasEnhancedContentRating ?enhancedContentRating ;\n            fivestars:hasAvailableDatasetsRating ?datasetsRating .\n        OPTIONAL { ?resource fivestars:enhancedContentRatingComment ?enhancedContentComment . }\n    }\n\n### CQ5\n\nWhat is the complete five-star dimensional breakdown (peer review, open access, enhanced content, available datasets, and machine-readable metadata) for a resource?\n\n    SELECT ?resource ?peerReview ?openAccess ?enhancedContent ?datasets ?metadata ?overall\n    WHERE {\n    ?resource fivestars:hasPeerReviewRating ?peerReview ;\n        fivestars:hasOpenAccessRating ?openAccess ;\n        fivestars:hasEnhancedContentRating ?enhancedContent ;\n        fivestars:hasAvailableDatasetsRating ?datasets ;\n        fivestars:hasMachine-readableMetadataRating ?metadata ;\n        fivestars:hasOverallFiveStarsRating ?overall .\n    }\n\n"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "The Five Stars of Online Research Articles Ontology (FiveStars)"
+      }
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Shotton, D. (2012). The Five Stars of Online Journal Articles - a Framework for Article Evaluation. In D-Lib Magazine, 18 (1/2). https://doi.org/10.1045/january2012-shotton (Open Access)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2012-01-16"
+      }
+    ],
+    "http://purl.org/dc/terms/issued": [
+      {
+        "@value": "2012-01-16"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2026-08-14"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://ror.org/00wb4mk85"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "https://github.com/SPAROntologies/fivestars/blob/master/docs/cq.md"
+      }
+    ],
+    "http://purl.org/ontology/bibo/doi": [
+      {
+        "@value": "https://doi.org/10.25504/FAIRsharing.6dfe9b"
+      }
+    ],
+    "http://purl.org/ontology/bibo/status": [
+      {
+        "@id": "http://purl.org/ontology/bibo/status/published"
+      }
+    ],
+    "http://purl.org/vocab/vann/changes": [
+      {
+        "@language": "en",
+        "@value": "\n* **v1.1.0**: added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.\n    "
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@language": "en",
+        "@value": "fivestars"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@language": "en",
+        "@value": "http://purl.org/spar/fivestars"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Five Stars of Online Research Articles Ontology (FiveStars)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "http://www.sparontologies.net/ontologies/fivestars"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#backwardCompatibleWith": [
+      {
+        "@id": "http://purl.org/spar/fivestars/2012-01-16"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#priorVersion": [
+      {
+        "@id": "http://purl.org/spar/fivestars/2012-01-16"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://purl.org/spar/fivestars/2026-08-14"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "1.1.0"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/logo": [
+      {
+        "@id": "https://github.com/SPAROntologies/fivestars/blob/master/spar.png"
+      }
+    ],
+    "https://schema.org/codeRepository": [
+      {
+        "@id": "https://github.com/SPAROntologies/fivestars"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://github.com/SPAROntologies/fivestars/blob/master/docs/current/fivestars.png"
+      }
+    ],
+    "https://schema.org/includedInDataCatalog": [
+      {
+        "@id": "https://fairsharing.org/"
+      }
+    ],
+    "https://schema.org/keywords": [
+      {
+        "@language": "en",
+        "@value": "semantic publishing"
+      },
+      {
+        "@language": "en",
+        "@value": "scholarly publishing"
+      },
+      {
+        "@language": "en",
+        "@value": "scholarly ratings"
+      },
+      {
+        "@language": "en",
+        "@value": "scientometrics"
+      },
+      {
+        "@language": "en",
+        "@value": "bibliometrics"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/hasOverallFiveStarsRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasOverallFiveStarsRating \"9\"^^xsd:nonNegativeInteger ;\n        fivestars:overallFiveStarsRatingComment \n            \"The nature of this article, being a position paper rather\n            than a research paper with primary research data, has\n            influenced the overall rating obtained.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has overall five stars rating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/hasOpenAccessRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasOpenAccessRating \"4\"^^xsd:nonNegativeInteger ;\n        fivestars:openAccessRatingComment \"The article has been published in gold open access.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Integer rating (from 0 to 4) given to journal artice for open access."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has open access rating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#priorVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/hasAvailableDatasetsRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasAvailableDatasetsRating \"0\"^^xsd:nonNegativeInteger ;\n        fivestars:availableDatasetsRatingComment \"No data has been published\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Integer rating (from 0 to 4) given to journal artice for available datasets."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has available datasets rating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/fivestars/hasPeerReviewRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasPeerReviewRating \"3\"^^xsd:nonNegativeInteger ;\n        fivestars:peerReviewRatingComment \"Post-publication peer review is available.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Integer rating (from 0 to 4) given to journal artice for peer review."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has peer review rating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  }
+]

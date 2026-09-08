@@ -1,0 +1,18 @@
+@prefix fivestars: <http://purl.org/spar/fivestars/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+fivestars:openAccessRatingComment a owl:DatatypeProperty ;
+    rdfs:label "open access rating comment"@en ;
+    vann:example """
+    :my-article
+        fivestars:hasOpenAccessRating "4"^^xsd:nonNegativeInteger ;
+        fivestars:openAccessRatingComment "The article has been published in gold open access." .
+    """ ;
+    rdfs:comment "A comment explaining Five Stars ratings given to journal artice relating to open access."@en ;
+    rdfs:isDefinedBy fivestars: ;
+    vs:term_status reg:statusStable .
+

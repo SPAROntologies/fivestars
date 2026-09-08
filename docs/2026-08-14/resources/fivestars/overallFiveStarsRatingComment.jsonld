@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "http://purl.org/spar/fivestars/overallFiveStarsRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasOverallFiveStarsRating \"9\"^^xsd:nonNegativeInteger ;\n        fivestars:overallFiveStarsRatingComment \n            \"The nature of this article, being a position paper rather\n            than a research paper with primary research data, has\n            influenced the overall rating obtained.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment on overall Five Stars rating given to journal artice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "overall five stars rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

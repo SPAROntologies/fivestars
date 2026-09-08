@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/overallFiveStarsRatingComment">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-article
+        fivestars:hasOverallFiveStarsRating "9"^^xsd:nonNegativeInteger ;
+        fivestars:overallFiveStarsRatingComment 
+            "The nature of this article, being a position paper rather
+            than a research paper with primary research data, has
+            influenced the overall rating obtained." .
+    </vann:example>
+    <rdfs:label xml:lang="en">overall five stars rating comment</rdfs:label>
+    <rdfs:comment xml:lang="en">A comment on overall Five Stars rating given to journal artice.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
