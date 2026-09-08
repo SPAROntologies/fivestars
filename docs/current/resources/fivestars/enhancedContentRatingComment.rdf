@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/enhancedContentRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <vann:example>
+    :my-article
+        fivestars:hasEnhancedContentRating "1"^^xsd:nonNegativeInteger ;
+        fivestars:enhancedContentRatingComment "Active web links have been provided." .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <rdfs:label xml:lang="en">enhanced content rating comment</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal artice relating to enhanced content.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

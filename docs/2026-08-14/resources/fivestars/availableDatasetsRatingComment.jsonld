@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "http://purl.org/spar/fivestars/availableDatasetsRatingComment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-article\n        fivestars:hasAvailableDatasetsRating \"0\"^^xsd:nonNegativeInteger ;\n        fivestars:availableDatasetsRatingComment \"No data has been published.\" .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A comment explaining Five Stars ratings given to journal artice relating to available datasets."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/fivestars/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "available datasets rating comment"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

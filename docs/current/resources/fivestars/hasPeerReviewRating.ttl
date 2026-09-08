@@ -1,0 +1,20 @@
+@prefix fivestars: <http://purl.org/spar/fivestars/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fivestars:hasPeerReviewRating a owl:DatatypeProperty ;
+    rdfs:label "has peer review rating"@en ;
+    vann:example """
+    :my-article
+        fivestars:hasPeerReviewRating "3"^^xsd:nonNegativeInteger ;
+        fivestars:peerReviewRatingComment "Post-publication peer review is available." .
+    """ ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for peer review."@en ;
+    rdfs:isDefinedBy fivestars: ;
+    rdfs:range xsd:nonNegativeInteger ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,7 @@
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."@en .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://purl.org/vocab/vann/example> "\n    :my-article\n        fivestars:hasOverallFiveStarsRating \"9\"^^xsd:nonNegativeInteger ;\n        fivestars:overallFiveStarsRatingComment \n            \"The nature of this article, being a position paper rather\n            than a research paper with primary research data, has\n            influenced the overall rating obtained.\" .\n    " .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fivestars/> .
+<http://purl.org/spar/fivestars/hasOverallFiveStarsRating> <http://www.w3.org/2000/01/rdf-schema#label> "has overall five stars rating"@en .

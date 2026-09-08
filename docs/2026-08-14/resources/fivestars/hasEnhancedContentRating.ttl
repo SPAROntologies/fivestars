@@ -1,0 +1,20 @@
+@prefix fivestars: <http://purl.org/spar/fivestars/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fivestars:hasEnhancedContentRating a owl:DatatypeProperty ;
+    rdfs:label "has enhanced content rating"@en ;
+    vann:example """
+    :my-article
+        fivestars:hasEnhancedContentRating "1"^^xsd:nonNegativeInteger ;
+        fivestars:enhancedContentRatingComment "Active web links have been provided." .
+    """ ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for enhanced content."@en ;
+    rdfs:isDefinedBy fivestars: ;
+    rdfs:range xsd:nonNegativeInteger ;
+    vs:term_status reg:statusStable .
+

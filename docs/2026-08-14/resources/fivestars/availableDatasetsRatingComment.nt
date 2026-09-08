@@ -1,0 +1,6 @@
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/2000/01/rdf-schema#label> "available datasets rating comment"@en .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://purl.org/vocab/vann/example> "\n    :my-article\n        fivestars:hasAvailableDatasetsRating \"0\"^^xsd:nonNegativeInteger ;\n        fivestars:availableDatasetsRatingComment \"No data has been published.\" .\n    " .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fivestars/> .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/fivestars/availableDatasetsRatingComment> <http://www.w3.org/2000/01/rdf-schema#comment> "A comment explaining Five Stars ratings given to journal artice relating to available datasets."@en .
