@@ -13,7 +13,7 @@ fivestars:hasPeerReviewRating a owl:DatatypeProperty ;
         fivestars:hasPeerReviewRating "3"^^xsd:nonNegativeInteger ;
         fivestars:peerReviewRatingComment "Post-publication peer review is available." .
     """ ;
-    rdfs:comment "Integer rating (from 0 to 4) given to journal artice for peer review."@en ;
+    rdfs:comment "Integer rating (from 0 to 4) given to journal article for peer review."@en ;
     rdfs:isDefinedBy fivestars: ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .

@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Overall Five stars rating (on integer scale from from 0 to 20) given to journal artice, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."
+        "@value": "Overall Five stars rating (on integer scale from from 0 to 20) given to journal article, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
