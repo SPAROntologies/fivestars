@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Integer rating (from 0 to 4) given to journal artice for peer review."
+        "@value": "Integer rating (from 0 to 4) given to journal article for peer review."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

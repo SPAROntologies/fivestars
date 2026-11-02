@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A comment explaining Five Stars ratings given to journal artice relating to open access."
+        "@value": "A comment explaining Five Stars ratings given to journal article relating to open access."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

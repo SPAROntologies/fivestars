@@ -1,11 +1,7 @@
 [project]
 name = "fivestars"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.1.1"
+description = "The Five Stars of Online Research Articles Ontology (FiveStars) is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled [The Five Stars of Online Journal Articles — a Framework for Article Evaluation](https://doi.org/10.1045/january2012-shotton)"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "codespell>=2.4.3",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []

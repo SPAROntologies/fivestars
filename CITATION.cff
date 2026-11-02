@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: The Five Stars of Online Research Articles Ontology (FiveStars)
+message: >-
+If you use this software, please cite it using the
+metadata from this file.
+type: software
+authors:
+- given-names: David
+  family-names: Shotton
+  orcid: 'https://orcid.org/0000-0001-5506-523X'
+identifiers:
+- type: doi
+  value: 10.25504/FAIRsharing.6dfe9b
+repository-code: 'https://github.com/SPAROntologies/fivestars'
+url: 'http://www.sparontologies.net/ontologies/fivestars'
+abstract: The Five Stars of Online Research Articles Ontology (FiveStars) is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata.
+keywords:
+- scholarly ratings
+- bibliometrics
+- scholarly publishing
+- scientometrics
+- semantic publishing
+license: CC-BY-4.0
+version: 1.1.1
+date-released: '2026-10-05'
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Shotton"
+    given-names: "David"
+    orcid: "https://orcid.org/0000-0001-5506-523X"
+  doi: "10.1045/january2012-shotton"
+  journal: "D-Lib Magazine"
+  issue: 18
+  volume: 1/2
+  title: "The Five Stars of Online Journal Articles - a Framework for Article Evaluation"
+  year: 2012
