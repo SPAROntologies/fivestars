@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Integer rating (from 0 to 4) given to journal artice for open access."
+        "@value": "Integer rating (from 0 to 4) given to journal article for open access."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

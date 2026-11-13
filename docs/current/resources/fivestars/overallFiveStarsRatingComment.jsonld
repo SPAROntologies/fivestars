@@ -12,7 +12,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A comment on overall Five Stars rating given to journal artice."
+        "@value": "A comment on overall Five Stars rating given to journal article."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

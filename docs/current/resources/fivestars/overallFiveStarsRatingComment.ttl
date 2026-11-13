@@ -15,7 +15,7 @@ fivestars:overallFiveStarsRatingComment a owl:DatatypeProperty ;
             than a research paper with primary research data, has
             influenced the overall rating obtained." .
     """ ;
-    rdfs:comment "A comment on overall Five Stars rating given to journal artice."@en ;
+    rdfs:comment "A comment on overall Five Stars rating given to journal article."@en ;
     rdfs:isDefinedBy fivestars: ;
     vs:term_status reg:statusStable .
 
