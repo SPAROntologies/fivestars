@@ -11,33 +11,15 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/overallFiveStarsRatingComment">
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasEnhancedContentRating">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">overall five stars rating comment</rdfs:label>
+    <rdfs:label xml:lang="en">has enhanced content rating</rdfs:label>
     <vann:example>
     :my-article
-        fivestars:hasOverallFiveStarsRating "9"^^xsd:nonNegativeInteger ;
-        fivestars:overallFiveStarsRatingComment 
-            "The nature of this article, being a position paper rather
-            than a research paper with primary research data, has
-            influenced the overall rating obtained." .
+        fivestars:hasEnhancedContentRating "1"^^xsd:nonNegativeInteger ;
+        fivestars:enhancedContentRatingComment "Active web links have been provided." .
     </vann:example>
-    <rdfs:comment xml:lang="en">A comment on overall Five Stars rating given to journal article.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasAvailableDatasetsRating">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has available datasets rating</rdfs:label>
-    <vann:example>
-    :my-article
-        fivestars:hasAvailableDatasetsRating "0"^^xsd:nonNegativeInteger ;
-        fivestars:availableDatasetsRatingComment "No data has been published" .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for available datasets.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for enhanced content.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
@@ -211,6 +193,43 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     <schema:keywords xml:lang="en">scientometrics</schema:keywords>
     <schema:keywords xml:lang="en">semantic publishing</schema:keywords>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/openAccessRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">open access rating comment</rdfs:label>
+    <vann:example>
+    :my-article
+        fivestars:hasOpenAccessRating "4"^^xsd:nonNegativeInteger ;
+        fivestars:openAccessRatingComment "The article has been published in gold open access." .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to open access.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasOpenAccessRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has open access rating</rdfs:label>
+    <vann:example>
+    :my-article
+        fivestars:hasOpenAccessRating "4"^^xsd:nonNegativeInteger ;
+        fivestars:openAccessRatingComment "The article has been published in gold open access." .
+    </vann:example>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for open access.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/enhancedContentRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">enhanced content rating comment</rdfs:label>
+    <vann:example>
+    :my-article
+        fivestars:hasEnhancedContentRating "1"^^xsd:nonNegativeInteger ;
+        fivestars:enhancedContentRatingComment "Active web links have been provided." .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to enhanced content.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasMachine-readableMetadataRating">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label xml:lang="en">has machine-readable metadata rating</rdfs:label>
@@ -224,18 +243,32 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasPeerReviewRating">
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/machine-readableMetadataRatingComment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has peer review rating</rdfs:label>
+    <rdfs:label xml:lang="en">machine-readable metadata rating comment</rdfs:label>
     <vann:example>
     :my-article
-        fivestars:hasPeerReviewRating "3"^^xsd:nonNegativeInteger ;
-        fivestars:peerReviewRatingComment "Post-publication peer review is available." .
+        fivestars:hasMachine-readableMetadataRating "1"^^xsd:nonNegativeInteger ;
+        fivestars:machine-readableMetadataRatingComment "Structural markup has been provided." .
     </vann:example>
-    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for peer review.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to machine-readable metadata.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/availableDatasetsRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">available datasets rating comment</rdfs:label>
+    <vann:example>
+    :my-article
+        fivestars:hasAvailableDatasetsRating "0"^^xsd:nonNegativeInteger ;
+        fivestars:availableDatasetsRatingComment "No data has been published." .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to available datasets.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasOverallFiveStarsRating">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -253,17 +286,51 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/availableDatasetsRatingComment">
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasPeerReviewRating">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">available datasets rating comment</rdfs:label>
+    <rdfs:label xml:lang="en">has peer review rating</rdfs:label>
     <vann:example>
     :my-article
-        fivestars:hasAvailableDatasetsRating "0"^^xsd:nonNegativeInteger ;
-        fivestars:availableDatasetsRatingComment "No data has been published." .
+        fivestars:hasPeerReviewRating "3"^^xsd:nonNegativeInteger ;
+        fivestars:peerReviewRatingComment "Post-publication peer review is available." .
     </vann:example>
-    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to available datasets.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for peer review.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/overallFiveStarsRatingComment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">overall five stars rating comment</rdfs:label>
+    <vann:example>
+    :my-article
+        fivestars:hasOverallFiveStarsRating "9"^^xsd:nonNegativeInteger ;
+        fivestars:overallFiveStarsRatingComment 
+            "The nature of this article, being a position paper rather
+            than a research paper with primary research data, has
+            influenced the overall rating obtained." .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A comment on overall Five Stars rating given to journal article.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/fivestars/peerReviewRatingComment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -277,96 +344,29 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/enhancedContentRatingComment">
+  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasAvailableDatasetsRating">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">enhanced content rating comment</rdfs:label>
+    <rdfs:label xml:lang="en">has available datasets rating</rdfs:label>
     <vann:example>
     :my-article
-        fivestars:hasEnhancedContentRating "1"^^xsd:nonNegativeInteger ;
-        fivestars:enhancedContentRatingComment "Active web links have been provided." .
+        fivestars:hasAvailableDatasetsRating "0"^^xsd:nonNegativeInteger ;
+        fivestars:availableDatasetsRatingComment "No data has been published" .
     </vann:example>
-    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to enhanced content.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasOpenAccessRating">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has open access rating</rdfs:label>
-    <vann:example>
-    :my-article
-        fivestars:hasOpenAccessRating "4"^^xsd:nonNegativeInteger ;
-        fivestars:openAccessRatingComment "The article has been published in gold open access." .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for open access.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for available datasets.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/hasEnhancedContentRating">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">has enhanced content rating</rdfs:label>
-    <vann:example>
-    :my-article
-        fivestars:hasEnhancedContentRating "1"^^xsd:nonNegativeInteger ;
-        fivestars:enhancedContentRatingComment "Active web links have been provided." .
-    </vann:example>
-    <rdfs:comment xml:lang="en">Integer rating (from 0 to 4) given to journal article for enhanced content.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/openAccessRatingComment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">open access rating comment</rdfs:label>
-    <vann:example>
-    :my-article
-        fivestars:hasOpenAccessRating "4"^^xsd:nonNegativeInteger ;
-        fivestars:openAccessRatingComment "The article has been published in gold open access." .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to open access.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fivestars/machine-readableMetadataRatingComment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">machine-readable metadata rating comment</rdfs:label>
-    <vann:example>
-    :my-article
-        fivestars:hasMachine-readableMetadataRating "1"^^xsd:nonNegativeInteger ;
-        fivestars:machine-readableMetadataRatingComment "Structural markup has been provided." .
-    </vann:example>
-    <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to machine-readable metadata.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>
