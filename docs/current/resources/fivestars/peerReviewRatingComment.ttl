@@ -13,6 +13,6 @@ fivestars:peerReviewRatingComment a owl:DatatypeProperty ;
         fivestars:peerReviewRatingComment "Post-publication peer review is available." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to peer review."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 

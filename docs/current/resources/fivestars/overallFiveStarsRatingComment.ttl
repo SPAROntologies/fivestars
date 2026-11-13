@@ -16,6 +16,6 @@ fivestars:overallFiveStarsRatingComment a owl:DatatypeProperty ;
             influenced the overall rating obtained." .
     """ ;
     rdfs:comment "A comment on overall Five Stars rating given to journal article."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
