@@ -6,9 +6,7 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/fivestars/openAccessRatingComment">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars/"/>
     <rdfs:label xml:lang="en">open access rating comment</rdfs:label>
     <rdfs:comment xml:lang="en">A comment explaining Five Stars ratings given to journal article relating to open access.</rdfs:comment>
     <vann:example>
@@ -16,5 +14,7 @@
         fivestars:hasOpenAccessRating "4"^^xsd:nonNegativeInteger ;
         fivestars:openAccessRatingComment "The article has been published in gold open access." .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fivestars"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

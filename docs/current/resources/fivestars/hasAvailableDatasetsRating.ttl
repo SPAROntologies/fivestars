@@ -14,7 +14,7 @@ fivestars:hasAvailableDatasetsRating a owl:DatatypeProperty ;
         fivestars:availableDatasetsRatingComment "No data has been published" .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for available datasets."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 

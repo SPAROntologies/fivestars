@@ -13,6 +13,6 @@ fivestars:availableDatasetsRatingComment a owl:DatatypeProperty ;
         fivestars:availableDatasetsRatingComment "No data has been published." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to available datasets."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 

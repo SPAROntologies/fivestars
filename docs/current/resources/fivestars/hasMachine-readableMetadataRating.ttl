@@ -14,7 +14,7 @@ fivestars:hasMachine-readableMetadataRating a owl:DatatypeProperty ;
         fivestars:machine-readableMetadataRatingComment "Structural markup has been provided." .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for machine-readable metadata."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
