@@ -11,6 +11,48 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+bibo:doi a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:image a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
+owl:backwardCompatibleWith a owl:AnnotationProperty .
+
 dc:contributor a owl:AnnotationProperty .
 
 dc:creator a owl:AnnotationProperty .
@@ -27,7 +69,7 @@ dc:title a owl:AnnotationProperty .
     rdfs:label "Five Stars of Online Research Articles Ontology (FiveStars)"@en ;
     dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)"^^xsd:string ;
-    dc:date "2026-10-05" ;
+    dc:date "2026-11-13" ;
     dc:description """
 The **_Five Stars of Online Research Articles Ontology (FiveStars)_** is an ontology written in OWL 2 DL to enable characterization of the five attributes of an online journal article - peer review, open access, enriched content, available datasets and machine-readable metadata - using the criteria discussed in the paper by David Shotton entitled [The Five Stars of Online Journal Articles — a Framework for Article Evaluation](https://doi.org/10.1045/january2012-shotton).
 
@@ -165,7 +207,7 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     dcterms:created "2012-01-16" ;
     dcterms:issued "2012-01-16" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-13" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/fivestars/blob/master/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.6dfe9b" ;
@@ -174,10 +216,10 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     vann:preferredNamespacePrefix "fivestars"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/fivestars"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/fivestars> ;
-    owl:backwardCompatibleWith fivestars:2026-08-14 ;
-    owl:priorVersion fivestars:2026-08-14 ;
-    owl:versionIRI fivestars:2026-10-05 ;
-    owl:versionInfo "1.1.1"^^xsd:string ;
+    owl:backwardCompatibleWith fivestars:2026-10-05 ;
+    owl:priorVersion fivestars:2026-10-05 ;
+    owl:versionIRI fivestars:2026-11-13 ;
+    owl:versionInfo "1.1.2"^^xsd:string ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/fivestars> ;
     schema:image <https://github.com/SPAROntologies/fivestars/blob/master/docs/current/fivestars.png> ;
@@ -185,9 +227,9 @@ What is the complete five-star dimensional breakdown (peer review, open access, 
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
+        "OWL ontology"@en ,
         "bibliometrics"@en,
-        "scholarly publishing"@en,
+        "scholarly communication"@en,
         "scholarly ratings"@en,
         "scientometrics"@en,
         "semantic publishing"@en .
@@ -200,7 +242,7 @@ fivestars:availableDatasetsRatingComment a owl:DatatypeProperty ;
         fivestars:availableDatasetsRatingComment "No data has been published." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to available datasets."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
 fivestars:enhancedContentRatingComment a owl:DatatypeProperty ;
@@ -211,7 +253,7 @@ fivestars:enhancedContentRatingComment a owl:DatatypeProperty ;
         fivestars:enhancedContentRatingComment "Active web links have been provided." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to enhanced content."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
 fivestars:hasAvailableDatasetsRating a owl:DatatypeProperty ;
@@ -222,7 +264,7 @@ fivestars:hasAvailableDatasetsRating a owl:DatatypeProperty ;
         fivestars:availableDatasetsRatingComment "No data has been published" .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for available datasets."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
@@ -234,7 +276,7 @@ fivestars:hasEnhancedContentRating a owl:DatatypeProperty ;
         fivestars:enhancedContentRatingComment "Active web links have been provided." .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for enhanced content."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
@@ -246,7 +288,7 @@ fivestars:hasMachine-readableMetadataRating a owl:DatatypeProperty ;
         fivestars:machine-readableMetadataRatingComment "Structural markup has been provided." .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for machine-readable metadata."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
@@ -258,7 +300,7 @@ fivestars:hasOpenAccessRating a owl:DatatypeProperty ;
         fivestars:openAccessRatingComment "The article has been published in gold open access." .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for open access."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
@@ -273,7 +315,7 @@ fivestars:hasOverallFiveStarsRating a owl:DatatypeProperty ;
             influenced the overall rating obtained." .
     """ ;
     rdfs:comment "Overall Five stars rating (on integer scale from from 0 to 20) given to journal article, obtained by summing the individual ratings given for each of the Five Stars of Online Journal Articles."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
@@ -285,7 +327,7 @@ fivestars:hasPeerReviewRating a owl:DatatypeProperty ;
         fivestars:peerReviewRatingComment "Post-publication peer review is available." .
     """ ;
     rdfs:comment "Integer rating (from 0 to 4) given to journal article for peer review."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     rdfs:range xsd:nonNegativeInteger ;
     vs:term_status reg:statusStable .
 
@@ -297,7 +339,7 @@ fivestars:machine-readableMetadataRatingComment a owl:DatatypeProperty ;
         fivestars:machine-readableMetadataRatingComment "Structural markup has been provided." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to machine-readable metadata."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
 fivestars:openAccessRatingComment a owl:DatatypeProperty ;
@@ -308,7 +350,7 @@ fivestars:openAccessRatingComment a owl:DatatypeProperty ;
         fivestars:openAccessRatingComment "The article has been published in gold open access." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to open access."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
 fivestars:overallFiveStarsRatingComment a owl:DatatypeProperty ;
@@ -322,7 +364,7 @@ fivestars:overallFiveStarsRatingComment a owl:DatatypeProperty ;
             influenced the overall rating obtained." .
     """ ;
     rdfs:comment "A comment on overall Five Stars rating given to journal article."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
 fivestars:peerReviewRatingComment a owl:DatatypeProperty ;
@@ -333,7 +375,7 @@ fivestars:peerReviewRatingComment a owl:DatatypeProperty ;
         fivestars:peerReviewRatingComment "Post-publication peer review is available." .
     """ ;
     rdfs:comment "A comment explaining Five Stars ratings given to journal article relating to peer review."@en ;
-    rdfs:isDefinedBy fivestars: ;
+    rdfs:isDefinedBy <http://purl.org/spar/fivestars> ;
     vs:term_status reg:statusStable .
 
 rdfs:comment a owl:AnnotationProperty .
